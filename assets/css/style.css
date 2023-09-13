@@ -1,0 +1,431 @@
+/* mengcustom font eksternal dengan css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* membuat root */
+:root {
+    --ungu: #DCAEE8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* memberi css pada font eksternal yang ingin dimasukkan */
+ body {
+    font-family: 'Poppins', sans-serif;
+ }
+
+ /* memberi css pada html */
+ html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+/* memberi css pada section html */
+section {
+    padding: 2rem 9%;
+}
+
+/* memberi css pada header */
+ header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     background: #DCAEE8;
+     padding: 2rem 3%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+     z-index: 1000;
+ }
+
+ /* memberi css pada class logo agar tertampil */
+ header .logo {
+     font-size: 30px; 
+     color: #7c3d8e;
+     font-weight: 950;
+     font: bolder;
+     text-decoration: none;
+ }
+
+ /* memberi css pada class logo, span titik */
+ header .titik {
+     font-size: 4rem;
+     font: bold;
+     color: #FDF4F5;
+ }
+
+ /* memberi css pada class navbar */
+ header .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: -1000;
+ }
+
+ /* memanggil dan memberi css pada li */
+ header .navbar li {
+     list-style: none;
+     margin-left: 3rem;
+ }
+
+ /* memanggil dan memberi css pada li a */
+ header .navbar li a {
+     font-size: 2rem;
+     font-weight: 500;
+     color: #333;
+     margin: 10px;
+     text-decoration: none;
+ }
+
+ /* memberi css pada hover navbar */
+ header .navbar li a:hover {
+     border-bottom: 1.5px solid #F6FFA6;
+     color: #FDF4F5;
+ }
+
+ /* memberi css pada li last-child */
+ header .navbar li:last-child {
+     margin-right: 0;
+ }
+
+ /* memberi css pada beranda */
+ .beranda {
+     display: flex;
+     align-items: center;
+     justify-content: left;
+     min-height: 100vh;
+     background-image: url(../images/background.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ /* memanggil dan memberi class pada class beranda dan content */
+ .beranda .content {
+     max-width: 50rem;
+ }
+
+ /* memanggil dan memberi css pada class bearnda, dan content heading 3 */
+ .beranda .content h3 {
+     font-size: 4rem;
+     color: #c68ed3;
+ }
+
+ /* memanggil dan memberi css pada class beranda dan content span */
+ .beranda .content span {
+     font-size: 4rem;
+     color: #7c3d8e;
+     padding: 1rem 0;
+     line-height: 1.5;
+ }
+
+ /* memanggil dan memberi css pada class beranda dan content paragraf */
+ .beranda .content p {
+     font-size: 1.7rem;
+     color: #999;
+     padding: 1rem 0;
+     line-height: 1.5;
+ }
+
+ /* memanggil dan memberi css pada class beranda, content dan btn */
+ .beranda .content .btn {
+     display: inline-block;
+     margin-top: 1rem;
+     border-radius: 6rem;
+     background: #BA90C6;
+     color: #FFF;
+     font-size: 1.5rem;
+     padding: 0.5rem 1.5rem;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ /* memberi hover pada button class beranda, content dan btn */
+ .beranda .content .btn:hover {
+     color: #ECC9EE;
+ }
+ 
+ /* memanggil dan memberi css pada heading */ 
+ .heading {
+     text-align: center;
+     font-size: 3rem;
+     color: #333;
+     padding: 1rem;
+     margin: 1rem 0;
+     background: rgba(255, 51, 153, 0.05);
+ }
+
+ /* memanggil dan memberi css pada heading span */
+ .heading span {
+     color: #BA90C6;
+ }
+ 
+ /* memanggil dan memberi css pada class tentang dan row */
+ .tentang .row {
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+     flex-wrap: wrap;
+     padding: 2rem;
+     padding-bottom: 3rem;
+ }
+
+ /* memanggil dan memberi css pada class tentang, row, dan content */
+ .tentang .row .content {
+     flex: 1 1 40rem;
+ }
+
+ /* memanggil dan memberi css pada class tentang, row, dan content pada heading 3 */
+ .tentang .row .content h3 {
+     font-size: 3rem;
+     color: #333;
+ }
+
+ /* memanggil dan memberi css pada class tentang, row, dan content paragraf */
+ .tentang .row .content p {
+     font-size: 1.7rem;
+     color: #999;
+     padding: 0.5rem 0;
+     padding-top: 1rem;
+     line-height: 1.5;
+ } 
+
+ /* memanggil dan memberi css pada class kategori dan box-container */
+ .kategori .box-container {
+     display: flex;
+     flex-wrap: #ECC9EE;
+     gap: 1.5rem;
+ }
+
+ /* memanggil dan memberi css pada class kategori, box-container dan box */
+ .kategori .box-container .box {
+    flex: 1 1 30rem;
+     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+     border-radius: 2rem;
+     border: 1rem solid rgba(0, 0, 0, 0.1);
+     padding: 2rem;
+     margin: 2rem;
+     position: relative;
+     align-items: center;
+ }
+
+ /* memanggil dan memberi css pada class kategori, box-container dan span fa-quote-right */
+ .kategori .box-container .box .fa-quote-right {
+     position: absolute;
+     bottom: 6rem;
+     right: 3rem;
+     font-size: 6rem;
+     color: #eee;
+ }
+
+ /* memanggil dan memberi css pada class kategori, box-container, box, starts dan i */
+ .kategori .box-container .box .stars i {
+     font-size: 2rem;
+ }
+
+ /* memanggil dan memberi css pada class kategori, box-container, box, stars dan i */
+ .kategori .box-container .box .stars i {
+     color: #999;
+      font-size: 1.5rem;
+     line-height: 1.5;
+     padding-top: 2rem;
+ }
+
+ /* memanggil dan memberi css pada class kategori, box-container, box, dan user */
+ .kategori .box-container .box .user {
+     display: flex;
+     align-items: center;
+     padding-top: 0.5rem;
+ }
+
+ /* memanggil dan memberi css img pada class kategori, box-container, box, dan user */
+ .kategori .box-container .box .user img {
+     height: 6rem;
+     width: 6rem;
+     border-radius: 25%;
+     object-fit: cover;
+     margin-right: 1.5rem;
+ }
+
+ /* memanggil dan memberi css pada class kategori, box-container, box, dan user heading 3 */
+ .kategori .box-container .box .user h3 {
+     font-size: 2rem;
+     color: #333;
+ }
+
+ /* memanggil dan memberi css pada class kategori, box-container, box, dan user span  */
+ .kategori .box-container .box .user span {
+     font-size: 1.5rem;
+     color: #999;
+ }
+
+ /* memanggil dan memberi css pada class belanja dan container */
+ .belanja .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 3rem 2rem;
+     gap: 3rem;
+ }
+
+ /* memanggil dan memberi css pada class belanja, container, dan products-container */
+ .belanja .container .products-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+     gap: 3rem;
+ }
+ 
+ /* memanggil dan memberi css pada class belanja, container, products-container, dan product */
+ .belanja .container .products-container .product {
+     text-align: center;
+     padding: 3rem 3rem;
+     background: #fff;
+     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+     border-radius: 15%;
+     outline: .1rem solid #ccc;
+     outline-offset: -2rem;
+     cursor: pointer;
+     gap: 1.5;
+ }
+
+ /* memanggil dan memberi css hover pada class belanja, container, products-container, dan product */
+ .belanja .container .products-container .product:hover {
+     outline: .2rem solid #222;
+     outline-offset: 0;
+ }
+
+ /* memanggil dan memberi css img pada class belanja, container, products-container, dan product */
+ .belanja .container .products-container .product img {
+     height: 25rem;
+     border-radius: 50%;
+     padding: 1.5rem;
+ }
+
+ /* memanggil dan memberi css hover transform img pada class belanja, container, products-container, product */
+ .belanja .container .products-container .product:hover img {
+     transform: scale(.9);
+ }
+
+ /* memanggil dan memberi css pada class belanja, container, products-container, product heading 3  */
+ .belanja .container .products-container .product h3 {
+     padding: .5rem 0;
+     font-size: 2rem;
+     color: #444;
+ }
+
+ /* memanggil dan memberi css hover pada class belanja, container, products-container, product heading 3 */
+ .belanja .container .products-container .product:hover h3 {
+     color: #c68ed3;
+ }
+
+ /* memanggil dan memberi css pada class belanja, container, products-container, product dan price */
+ .belanja .container .products-container .product .price {
+     font-size: 2rem;
+     color: #444;
+ }
+
+ /* memanggil dan memberi css pada class kontak dan row */
+ .kontak .row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     align-items: center;
+ }
+
+ /* memanggil dan memberi css pada class kontak, row dan form action */
+ .kontak .row form {
+     flex: 1 1 40rem;
+     padding: 2rem 2.5rem;
+     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+     border: 0.1rem solid rgba(0, 0, 0, 0.1);
+     background: #fff;
+     border-radius: 0.5rem;
+ }
+
+ /* memanggil dan memberi css pada class kontak, row, form action dan box */
+ .kontak .row form .box {
+     padding: 1rem;
+     font-size: 1.7rem;
+     color: #333;
+     text-transform: none;
+     border: 0.1rem solid rgba(0, 0, 0, 0.1);
+     border-radius: 0.5rem;
+     margin: 0.7rem 0;
+     width: 100%;
+ }
+
+ /* memanggil dan memberi css focus pada class kontak, row, form action dan box */
+ .kontak .row form .box:focus {
+     border-color: #ECC9EE;
+ }
+
+ /* memanggil dan memberi css pada class kontak, row, form action dan textarea */
+ .kontak .row form textarea {
+     height: 15rem;
+     resize: none;
+ }
+
+ /* memanggil dan memberi css pada class kontak, row dan button */
+ .kontak .row .btn {
+     display: inline-block;
+     margin-top: 1rem;
+     border-radius: 6rem;
+     background: #BA90C6;
+     color: #FFF;
+     font-size: 1.5rem;
+     padding: 0.5rem 1.5rem;
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ /* memanggil dan memberi css hover pada class kontak, row, dan button */
+ .kontak .row .btn:hover {
+      background: #ECC9EE;
+      color: #DCAEE8;
+ }
+
+ /* memanggil dan memberi css pada class footer dan box-container */
+ .footer .box-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+ }
+
+ /* memanggil dan memberi css pada class footer, box-container dan box */
+ .footer .box-container .box {
+     flex: 1 1 25rem;
+ }
+
+ /* memanggil dan memberi css pada class footer, box-container dan box heading 3 */
+ .footer .box-container .box h3 {
+     color: #333;
+     font-size: 2.5rem;
+     padding: 1rem 0;
+ }
+
+ /* memanggil dan memberi css pada class footer, box-container, dan box a */
+ .footer .box-container .box a {
+     display: block;
+     color: #666;
+     font-size: 1.5rem;
+     padding: 1rem 0;
+ }
+
+ /* memanggil dan memberi css hover pada class footer, box-container, dan box a */
+ .footer .box-container .box a:hover {
+     color: #BA90C6;
+     text-decoration: underline;
+ }
+
+ /* memanggil dan memberi css pada class footer, dan credit span */
+ .footer .credit span {
+     color: #BA90C6;
+ }
+
