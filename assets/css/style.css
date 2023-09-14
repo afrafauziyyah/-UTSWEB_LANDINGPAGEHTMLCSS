@@ -207,7 +207,7 @@ section {
 
  /* memanggil dan memberi css pada class kategori, box-container dan box */
  .kategori .box-container .box {
-    flex: 1 1 30rem;
+     flex: 1 1 30rem;
      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
      border-radius: 2rem;
      border: 1rem solid rgba(0, 0, 0, 0.1);
